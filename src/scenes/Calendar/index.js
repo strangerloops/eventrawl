@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GraphAPI from '../../services/graph_api';
-import Event from '../../components/Event';
+import Event from './Event';
 
 class Calendar extends Component {
 
