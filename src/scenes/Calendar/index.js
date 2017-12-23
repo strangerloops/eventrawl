@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import GraphAPI from '../../services/graph_api';
+import GraphAPI from '../../services/GraphAPI';
 import Event from './Event';
+import { Link } from 'react-router-dom'
 
 class Calendar extends Component {
 
@@ -26,7 +27,12 @@ class Calendar extends Component {
 
     return (
       <div>
-        {events}
+        <div>
+          {events}
+        </div>
+        <div>
+          <Link to="/privacy">Privacy policy</Link>
+        </div>
       </div>
     );
   }
